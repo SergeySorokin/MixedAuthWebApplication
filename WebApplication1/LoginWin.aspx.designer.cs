@@ -7,7 +7,7 @@
 // </автоматически создаваемое>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1 {
+namespace MixedModeWebApplication {
     
     
     public partial class LoginWin {

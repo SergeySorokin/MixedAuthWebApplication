@@ -12,6 +12,7 @@ namespace MixedModeWebApplication {
             string strUsername = User.Identity.Name;
             Response.Write("Authenticated as " + strUsername);
             FormsAuthentication.SetAuthCookie(strUsername, false);
+            FormsAuthentication.RedirectFromLoginPage(strUsername, false);
         }
     }
 }

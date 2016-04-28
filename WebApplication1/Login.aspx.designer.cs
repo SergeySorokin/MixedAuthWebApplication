@@ -7,7 +7,7 @@
 // </автоматически создаваемое>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1 {
+namespace MixedModeWebApplication {
     
     
     public partial class Login {
@@ -31,13 +31,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Button ButtonLogin;
         
         /// <summary>
-        /// ButtonLogout элемент управления.
+        /// ButtonWinLogin элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonLogout;
+        protected global::System.Web.UI.WebControls.Button ButtonWinLogin;
         
         /// <summary>
         /// HyperLink1 элемент управления.

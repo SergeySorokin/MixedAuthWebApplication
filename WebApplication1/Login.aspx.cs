@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace MixedModeWebApplication {
     public partial class Login : System.Web.UI.Page {
@@ -19,10 +14,11 @@ namespace MixedModeWebApplication {
         protected void ButtonLogin_Click(object sender, EventArgs e) {
             string strUsername = "TestUser";
             FormsAuthentication.SetAuthCookie(strUsername, false);
+            FormsAuthentication.RedirectFromLoginPage(strUsername, false);
         }
 
-        protected void ButtonLogout_Click(object sender, EventArgs e) {
-            FormsAuthentication.SignOut();
+        protected void ButtonWinLogin_Click(object sender, EventArgs e) {
+            Response.Redirect("LoginWin.aspx");
         }
     }
 }
