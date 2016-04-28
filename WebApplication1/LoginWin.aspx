@@ -9,9 +9,10 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    LoginWin.aspx
+        Current page: LoginWin.aspx
+        Current user: <%=HttpContext.Current.User.Identity.ToString() %>
     </div>
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/WebForm1.aspx">WebForm.aspx</asp:HyperLink>
+        Navigate to <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/WebForm1.aspx">WebForm.aspx</asp:HyperLink>
     </form>
 </body>
 </html>

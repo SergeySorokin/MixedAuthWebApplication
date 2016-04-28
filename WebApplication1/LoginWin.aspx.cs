@@ -6,17 +6,12 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebApplication1
-{
-    public partial class LoginWin : System.Web.UI.Page
-    {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            
+namespace MixedModeWebApplication {
+    public partial class LoginWin : System.Web.UI.Page {
+        protected void Page_Load(object sender, EventArgs e) {
             string strUsername = User.Identity.Name;
-            Response.Write(strUsername);
+            Response.Write("Authenticated as " + strUsername);
             FormsAuthentication.SetAuthCookie(strUsername, false);
-             
         }
     }
 }
